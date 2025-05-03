@@ -14,10 +14,7 @@ public class Box <T extends Fruit> {
     }
 
     public boolean compare(Box box){
-        if(Math.abs(this.getWeight() - box.getWeight()) < 0.0001)
-            return true;
-        else
-            return false;
+         return (Math.abs(this.getWeight() - box.getWeight()) < 0.0001);
     }
 
     public void moveFruits(Box box){
